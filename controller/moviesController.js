@@ -33,7 +33,7 @@ export const updateMovie = (req, res) =>
         else
         {
             const movie = req.body
-            if(!movie.oscar || !book.title || !book.published || !movie.producer) {
+            if(!movie.oscar || !movie.title || !movie.published || !movie.producer) {
                 return res.status(400).json({message: 'Invalid data'})
             }
             movies[id] = movie
